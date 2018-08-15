@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Sesuda docs',
   port: '9001',
-  base: 'sesuda-docs',
+  base: '/sesuda-docs/',
   dest: 'docs',
   themeConfig: {
     sidebar: [
