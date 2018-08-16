@@ -6,6 +6,8 @@
 
 ### Investigadores
 
+![Diagrama Investigadores](./diagramaInvestigadores.png)
+
 - UNSAM: investigador con dedicación semi-exclusiva o exclusiva,
 - CONICET: investigador CONICET con dedicación simple.
 - CONICET-UNSAM: investigador CONICET con dedicación semi-exclusiva o exclusiva.
