@@ -4,7 +4,9 @@
 
 ## Definiciones
 
-<a :href="$withBase('attachments/sarasa.txt')">sarasa</a>
+<!-- <a :href="$withBase('attachments/sarasa.txt')">sarasa</a> -->
+
+[sarasa](./sarasa.txt)
 
 ### Investigadores
 
