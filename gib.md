@@ -4,10 +4,6 @@
 
 ## Definiciones
 
-<!-- <a :href="$withBase('attachments/sarasa.txt')">sarasa</a> -->
-
-[sarasa](./sarasa.txt)
-
 ### Investigadores
 
 - UNSAM: investigador con dedicación semi-exclusiva o exclusiva,
