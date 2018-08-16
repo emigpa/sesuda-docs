@@ -5,7 +5,7 @@ module.exports = {
   dest: 'docs',
   themeConfig: {
     sidebar: [
-      '/',
+      ['/', 'introduccion'],
       ['/funcs', 'funcs'],
       ['/api', 'api'],
       ['/gib', 'gib'],
