@@ -1,20 +1,18 @@
-# Estructura de base de datos
+# pouchDB
 
-[[toc]]
+Base de datos donde se almacena la información central de SESUDA. Si bien la API que se usa es la de pouchDB, la implementación en el servidor es couchDB.
 
 ::: warning Aclaración
 todas las funciones que se ejecutan en la base de datos, tienen como valor de retorno el status del resultado.
 :::
 
-## Bases de datos
-
-### personal
+## personal
 
 ::: tip Convención acerca del título de la base de datos.
 Las db que contienen caracterizaciones sobre el personal como titulo deben empezar con 'personal' + '\_' + 'nombre específico sin espacios en minúscula'.
 :::
 
-- **personal_categorizados**
+- **personal_categorizados**: categoria docente en unsam (hay que agregar los de todas las instituciones!!!!!!! y un historial de que categorias le fueron dando)
 - **personal_conicet**
 - **personal_docentes**
 - **personal_becariosunsam**
@@ -22,7 +20,7 @@ Las db que contienen caracterizaciones sobre el personal como titulo deben empez
 - **personal_conicetnominaweb**
 - **personal_gib**: listado de personas en gib.
 
-### sigeva
+## sigeva
 
 ::: tip Convención acerca del título de la base de datos.
 Las db que contienen datos de sigeva deben empezar con 'sigeva' + '\_' + 'nombre específico sin espacios en minúscula'.
@@ -31,7 +29,7 @@ Las db que contienen datos de sigeva deben empezar con 'sigeva' + '\_' + 'nombre
 - **sigeva_bdd**
 - **sigeva_proyectos**
 
-### scopus
+## scopus
 
 ::: tip Convención acerca del título de la base de datos.
 Las db que contienen datos de scopus deben empezar con 'scopus' + '\_' + 'nombre específico sin espacios en minúscula'.

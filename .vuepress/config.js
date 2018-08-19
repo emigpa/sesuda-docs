@@ -10,7 +10,7 @@ module.exports = {
       ['/api', 'api'],
       ['/gib', 'gib'],
       ['/estructura', 'estructura'],
-      ['/pouch', 'pouch']
+      ['/pouch', 'pouchDB']
     ],
     nav: [
       { text: 'Home', link: '/' },
