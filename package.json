@@ -1,0 +1,30 @@
+{
+  "name": "sesuda-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "README.md",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/emigpa/sesuda-docs.git"
+  },
+  "author": "emigpa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emigpa/sesuda-docs/issues"
+  },
+  "homepage": "https://github.com/emigpa/sesuda-docs#readme",
+  "devDependencies": {
+    "vuepress": "^0.14.2"
+  },
+  "dependencies": {
+    "markdown-it-katex": "^2.0.3"
+  }
+}

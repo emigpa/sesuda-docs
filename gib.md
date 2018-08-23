@@ -8,25 +8,27 @@
 
 ![Diagrama Investigadores](./diagramaInvestigadores.png)
 
-- UNSAM: investigador con dedicación semi-exclusiva o exclusiva,
-- CONICET: investigador CONICET con dedicación simple.
-- CONICET-UNSAM: investigador CONICET con dedicación semi-exclusiva o exclusiva.
+- UNSAM: investigador con dedicación semi-exclusiva o exclusiva en docencia.
+- CONICET: investigador de carrera CONICET con cargo de dedicación simple en docencia.
+- CONICET-UNSAM: investigador de carrera CONICET con dedicación semi-exclusiva o exclusiva en docencia.
 
 ### Becarios (Estudiantes de posgrado)
 
 ![Diagrama Becarios](./diagramaBecarios.png)
 
+<!-- $\forall BU \in EPU$ -->
 
-- Estudiantes de posgrado UNSAM: estudiantes que realizan su doctorado o posdoctorado en UNSAM.
-- BECARIOS UNSAM: perciben una beca de doctorado o posdoc financiada por UNSAM o alguna de sus dependencias.
+- Estudiantes de posgrado: estudiantes que realizan un doctorado o posdoctorado en alguna carrera acreditada por la CONEAU.
+- BECARIOS UNSAM: perciben una beca de doctorado o posdoctorado financiada por UNSAM o alguna de sus dependencias.
 - BECARIOS CONICET: perciben una beca financiada por CONICET con lugar de trabajo en UNSAM.
 - BECARIOS CONICET-UNSAM: perciben una beca cofinanciada por CONICET Y UNSAM.
 - BECARIOS ANPCYT: son miembros de un proyecto otorgado a UNSAM y financiado por ANPCYT. Deben ser estudiantes de posgrado de una carrera acreditada por la CONEAU, su director debe ser miembro del grupo no necesariamente con lugar de trabajo en UNSAM.
 
 ### Otros cargos
 
-- SIMPLES-UNSAM: docente con dedicación simple o personal sin dedicación que realiza alguna ACYT.
+- SIMPLES-UNSAM: docente con dedicación simple que realiza alguna ACYT.
 - CPA-CONICET: personal de apoyo CONICET.
+- Otros: personal sin cargo docente, contratados, etc.
 
 ## Archivos
 
