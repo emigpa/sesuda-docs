@@ -32,18 +32,85 @@
 
 ## Archivos
 
-| ARCHIVO                      | ORIGEN                            | DATOS                                                                                                                                                                        |
-| ---------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BECARIOS-UNSAM.csv           | datos sacados de listas de Romina | dni, cuil, apellido, nombre, convocatoria, unidad                                                                                                                            |
-| CONICET-UNSAM.CSV            | datos que otorgó Ract             | cuil, apellido, nombre, escalafon                                                                                                                                            |
-| DEDICACION-UNSAM-DIC2016.CSV | datos de Sec Academica            | legajo, apellido, nombre, cargoId, dni, cuil, dependencia, sede, dedicacion, porcentaje, estado, antiguedad, caracter, planta, categoria, fechaAlta, fechaBaja, contratacion |
-| PERSONALCORRECCIONUUAA.CSV   | correcion a mano de UUAA          | cuil, apellido, nombre, unidad                                                                                                                                               |
+| ARCHIVO                      | ORIGEN                            | DATOS                                                                                                                                                                        | NOMBRE EN BASE DE DATOS |
+| ---------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| BECARIOS-UNSAM.csv           | datos sacados de listas de Romina | dni, cuil, apellido, nombre, convocatoria, unidad                                                                                                                            | personal_becariosunsam  |
+| CONICET-UNSAM.CSV            | datos que otorgó Ract             | cuil, apellido, nombre, escalafon                                                                                                                                            | personal_conicet        |
+| DEDICACION-UNSAM-DIC2016.CSV | datos de Sec Academica            | legajo, apellido, nombre, cargoId, dni, cuil, dependencia, sede, dedicacion, porcentaje, estado, antiguedad, caracter, planta, categoria, fechaAlta, fechaBaja, contratacion | personal_docentes       |
+| PERSONALCORRECCIONUUAA.CSV   | correcion a mano de UUAA          | cuil, apellido, nombre, unidad                                                                                                                                               | personal_correccionuuaa |
 
-## Orden de precedencia
+## Datos
 
-1. Memoria 2016 (/lib/personal): define el personal base.
-2. CONICET-UNSAM y NOMINA CONICET WEB (pouchGib): agrega escalafon.
-3. BECARIOS-UNSAM: agrega info de becarios no conicet.
-4. DEDICACION-UNSAM: agrega info de dedicacion docente.
-5. Categorizados (pouchUpdateCategorizados): agrega info de categorizacion.
-6. PERSONALCORRECCIONUUAA: agrega la UUAA a los que falta identificar.
+1. Memoria 2016 (/lib/personal): define el personal informado por UUAA.
+2. personal_conicet (pouchGib): agrega escalafon.
+3. personal_becariosunsam: agrega info de becarios no conicet.
+4. personal_correccionuuaa: agrega la UUAA a los que falta identificar.
+5. personal_docentes: agrega info de dedicacion docente.
+6. personal_categorizados (pouchUpdateCategorizados): agrega info de categorizacion. **FALTA IMPLEMENTAR!!!**
+7. personal_conicetnominaweb
+
+1 + 2 + 3 = listado total de personas.
+
+## Prototype
+
+```javascript
+gibPrototype = {
+  gib: {
+    fecha: 'now',
+    memoria: {
+      status: true,
+      email: '',
+      unidad: '',
+      usuario: ''
+    },
+    personal_conicet: {
+      status: true,
+      escalafon: ''
+    },
+    // personal_conicetnominaweb: {
+    //   status: true,
+    //   escalafon: '',
+    //   unidad: '',
+    //   organizacion_id: ''
+    // },
+    personal_becariosunsam: {
+      status: true,
+      convocatoria: '',
+      unidad: ''
+    },
+    personal_docentes: {
+      status: true,
+      cargos: [
+        {
+          legajo: '',
+          dependencia: '',
+          sede: '',
+          dedicacion: '',
+          estado: '',
+          antiguedad: '',
+          caracter: '',
+          categoria: '',
+          fechaAlta: '',
+          fechaBaja: ''
+        }
+      ]
+    },
+    personal_categorizados: {
+      status: true,
+      categoria: '',
+      anio: ''
+    },
+    personal_correccionuuaa: {
+      status: true,
+      unidad: ''
+    }
+  },
+  cuil: '',
+  apellido: '',
+  nombre: '',
+  unidad: '',
+  escalafon: '',
+  categoria: '',
+  cargo: ''
+}
+```
