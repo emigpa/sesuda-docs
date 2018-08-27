@@ -9,7 +9,7 @@
 ![Diagrama Investigadores](./diagramaInvestigadores.png)
 
 - UNSAM: investigador con dedicación semi-exclusiva o exclusiva en docencia.
-- CONICET: investigador de carrera CONICET con cargo de dedicación simple en docencia.
+- CONICET: investigador de carrera CONICET con cargo de dedicación simple en docencia o sin cargo docente.
 - CONICET-UNSAM: investigador de carrera CONICET con dedicación semi-exclusiva o exclusiva en docencia.
 
 ### Becarios (Estudiantes de posgrado)
@@ -28,7 +28,7 @@
 
 - SIMPLES-UNSAM: docente con dedicación simple que realiza alguna ACYT.
 - CPA-CONICET: personal de apoyo CONICET.
-- Otros: personal sin cargo docente, contratados, etc.
+- OTROS CARGOS ACYT: personal sin cargo docente, contratados, becarios CIN, etc.
 
 ## Archivos
 
@@ -50,6 +50,22 @@
 7. personal_conicetnominaweb
 
 1 + 2 + 3 = listado total de personas.
+
+## Types
+
+```javascript
+const escalafon =
+  'INVESTIGADOR_CONICET' ||
+  'INVESTIGADOR_CONICET_UNSAM' ||
+  'INVESTIGADOR_UNSAM' ||
+  'BECARIO_CONICET' ||
+  'BECARIO_CONICET_UNSAM' ||
+  'BECARIO_UNSAM' ||
+  'BECARIO_ANPCYT' ||
+  'CPA_CONICET' ||
+  'SIMPLE_UNSAM' ||
+  'OTRO_CARGO_ACYT'
+```
 
 ## Prototype
 
