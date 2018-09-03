@@ -12,7 +12,7 @@ todas las funciones que se ejecutan en la base de datos, tienen como valor de re
 Las db que contienen caracterizaciones sobre el personal como titulo deben empezar con 'personal' + '\_' + 'nombre específico sin espacios en minúscula'.
 :::
 
-- **personal_categorizados**: categoria docente en unsam (hay que agregar los de todas las instituciones!!!!!!! y un historial de que categorias le fueron dando) Revisar la libreria, todavia no está generada esta base de datos.
+- **personal_categorizados**: categoria docente en región Metropolitana.
 - **personal_conicet**
 - **personal_docentes**
 - **personal_becariosunsam**

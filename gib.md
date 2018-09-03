@@ -46,7 +46,7 @@
 3. personal_becariosunsam: agrega info de becarios no conicet.
 4. personal_correccionuuaa: agrega la UUAA a los que falta identificar.
 5. personal_docentes: agrega info de dedicacion docente.
-6. personal_categorizados (pouchUpdateCategorizados): agrega info de categorizacion. **FALTA IMPLEMENTAR!!!**
+6. personal_categorizados (pouchUpdateCategorizados): agrega info de categorizacion.
 7. personal_conicetnominaweb
 
 1 + 2 + 3 = listado total de personas.
