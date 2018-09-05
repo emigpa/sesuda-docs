@@ -1,10 +1,33 @@
-# Gestor de investigadores y becarios
+# GIB - Gestor de investigadores y becarios
 
-[[toc]]
+El gestor de investigadores y becarios en una aplicación web que categoriza y describe al personal dedicado a la actividad de ciencia y tecnología. La información es analizada luego de converger fuentes heterogéneas de datos. Tiene como propósito ofrecer un listado de personal que pueda ser usado como punto de partida para la elaboración de informes.
+
+## Fuentes de datos
+
+| Dato                                             | Fuente                     | Fecha de actualización   |
+| ------------------------------------------------ | -------------------------- | ------------------------ |
+| Cargo docente                                    | Secretaria académica       | Diciembre de 2016        |
+| Categorización del programa de incentivo docente | Comisión metropolitana     | Mayo de 2018             |
+| Carrera de investigador en CONICET               | Mincyt via RACT            | Mayo de 2018             |
+| Personal de apoyo CONICET                        | Mincyt via RACT            | Mayo de 2018             |
+| Beca CONICET                                     | Mincyt via RACT            | Mayo de 2018             |
+| Beca UNSAM                                       | Vicerrectorado             | Mayo de 2018             |
+| Beca ANPCYT                                      | Vicerrectorado             | Mayo de 2018             |
+| Publicaciones científicas                        | SIGEVA-UNSAM               | Actualización automática |
+| Publicaciones en SCOPUS                          | SCOPUS                     | Mayo de 2018             |
+| Datos personales                                 | SIGEVA-UNSAM               | Actualización automática |
+| Lugar de trabajo                                 | Memoria Institucional 2016 | Julio de 2017            |
+| Foto                                             | Guía de investigadores     | Mayo de 2018             |
 
 ## Definiciones
 
-### Investigadores
+## Investigadores
+
+Los investigadores son personas con una gran trayectoria en su campo de investigación, dirigen proyectos, forman recursos humanos, divulgan y transfieren conocimento.
+
+### Clasificación
+
+Los investigadores están clasificados por la entidad que financia su carrera como investigador y por su dedicación a la docencia.
 
 ![Diagrama Investigadores](./diagramaInvestigadores.png)
 
@@ -12,11 +35,15 @@
 - CONICET: investigador de carrera CONICET con cargo de dedicación simple en docencia o sin cargo docente.
 - CONICET-UNSAM: investigador de carrera CONICET con dedicación semi-exclusiva o exclusiva en docencia.
 
-### Becarios (Estudiantes de posgrado)
+## Becarios (Estudiantes de posgrado)
+
+Los becarios de investigación son estudiantes de doctorado o posdoctorado que realizan una tesis dirigida por un investigador. Pueden recibir una beca y en algunos casos tener un cargo docente de dedicación simple.
+
+### Clasificación
+
+Los becarios están clasificados según la entidad que financia su beca.
 
 ![Diagrama Becarios](./diagramaBecarios.png)
-
-<!-- $\forall BU \in EPU$ -->
 
 - Estudiantes de posgrado: estudiantes que realizan un doctorado o posdoctorado en alguna carrera acreditada por la CONEAU.
 - BECARIOS UNSAM: perciben una beca de doctorado o posdoctorado financiada por UNSAM o alguna de sus dependencias.
@@ -24,7 +51,7 @@
 - BECARIOS CONICET-UNSAM: perciben una beca cofinanciada por CONICET Y UNSAM.
 - BECARIOS ANPCYT: son miembros de un proyecto otorgado a UNSAM y financiado por ANPCYT. Deben ser estudiantes de posgrado de una carrera acreditada por la CONEAU, su director debe ser miembro del grupo no necesariamente con lugar de trabajo en UNSAM.
 
-### Otros cargos
+## Otros cargos
 
 - SIMPLES-UNSAM: docente con dedicación simple que realiza alguna ACYT.
 - CPA-CONICET: personal de apoyo CONICET.
