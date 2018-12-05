@@ -19,7 +19,8 @@ module.exports = {
       ['/api', 'api'],
       ['/gib', 'gib'],
       ['/estructura', 'estructura'],
-      ['/pouch', 'pouchDB']
+      ['/pouch', 'pouchDB'],
+      ['/memoria', 'memoria']
     ],
     nav: [
       { text: 'Home', link: '/' },

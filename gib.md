@@ -23,15 +23,25 @@ El gestor de investigadores y becarios en una aplicación web que categoriza y d
 
 ## Investigadores
 
-Los investigadores son personas con una gran trayectoria en su campo de investigación, dirigen proyectos, forman recursos humanos, divulgan y transfieren conocimento.
+Los investigadores poseen una gran trayectoria en su campo de investigación, dirigen proyectos, forman recursos humanos, divulgan y transfieren conocimento.
 
 ### Clasificación
 
-Los investigadores están clasificados por la entidad que financia su carrera como investigador y por su dedicación a la docencia.
+| Orden | Fuente                                           | Comentario |
+| ----- | ------------------------------------------------ | ---------- |
+| 1     | CONICET - CNEA                                   |            |
+| 2     | Dedicacion excl o semi                           |            |
+| 3     | Categoria I, II o III                            |            |
+| 4     | Director de Proyecto I+D                         |            |
+| 5     | Formación de Becarios doc, posdoc o investigador |            |
+| 6     | Publicaciones con referato                       |            |
+| 7     | Ramón lo dijo                                    |            |
+
+Los investigadores están clasificados por la entidad que financia su carrera como investigador, por su dedicación a la docencia o su categoria en el programa de incentivo docente.
 
 ![Diagrama Investigadores](./diagramaInvestigadores.png)
 
-- UNSAM: investigador con dedicación semi-exclusiva o exclusiva en docencia.
+- UNSAM: investigador con dedicación semi-exclusiva o exclusiva en docencia o categoria 1, 2 o 3 en el programa de incentivo docente.
 - CONICET: investigador de carrera CONICET con cargo de dedicación simple en docencia o sin cargo docente.
 - CONICET-UNSAM: investigador de carrera CONICET con dedicación semi-exclusiva o exclusiva en docencia.
 
@@ -59,12 +69,13 @@ Los becarios están clasificados según la entidad que financia su beca.
 
 ## Archivos
 
-| ARCHIVO                      | ORIGEN                            | DATOS                                                                                                                                                                        | NOMBRE EN BASE DE DATOS |
-| ---------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| BECARIOS-UNSAM.csv           | datos sacados de listas de Romina | dni, cuil, apellido, nombre, convocatoria, unidad                                                                                                                            | personal_becariosunsam  |
-| CONICET-UNSAM.CSV            | datos que otorgó Ract             | cuil, apellido, nombre, escalafon                                                                                                                                            | personal_conicet        |
-| DEDICACION-UNSAM-DIC2016.CSV | datos de Sec Academica            | legajo, apellido, nombre, cargoId, dni, cuil, dependencia, sede, dedicacion, porcentaje, estado, antiguedad, caracter, planta, categoria, fechaAlta, fechaBaja, contratacion | personal_docentes       |
-| PERSONALCORRECCIONUUAA.CSV   | correcion a mano de UUAA          | cuil, apellido, nombre, unidad                                                                                                                                               | personal_correccionuuaa |
+| ARCHIVO                         | ORIGEN                            | DATOS                                                                                                                                                                        | NOMBRE EN BASE DE DATOS      |
+| ------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| BECARIOS-UNSAM.csv              | datos sacados de listas de Romina | dni, cuil, apellido, nombre, escalafon, unidad, tipo, convocatoria, fechaAlta, fechaBaja                                                                                     | personal_becariosunsam       |
+| CONICET-UNSAM.csv               | datos que otorgó Ract             | cuil, apellido, nombre, escalafon                                                                                                                                            | personal_conicet             |
+| DEDICACION-UNSAM-DIC2016.csv    | datos de Sec Academica            | legajo, apellido, nombre, cargoId, dni, cuil, dependencia, sede, dedicacion, porcentaje, estado, antiguedad, caracter, planta, categoria, fechaAlta, fechaBaja, contratacion | personal_docentes            |
+| PERSONALCORRECCIONUUAA.csv      | correcion a mano de UUAA          | cuil, apellido, nombre, unidad                                                                                                                                               | personal_correccionuuaa      |
+| PERSONALCORRECCIONESCALAFON.csv | correcion a mano de escalafon     | cuil, escalafon, comentario                                                                                                                                                  | personal_correccionescalafon |
 
 ## Datos
 
@@ -72,9 +83,10 @@ Los becarios están clasificados según la entidad que financia su beca.
 2. personal_conicet (pouchGib): agrega escalafon.
 3. personal_becariosunsam: agrega info de becarios no conicet.
 4. personal_correccionuuaa: agrega la UUAA a los que falta identificar.
-5. personal_docentes: agrega info de dedicacion docente.
-6. personal_categorizados (pouchUpdateCategorizados): agrega info de categorizacion.
-7. personal_conicetnominaweb
+5. personal_correccionescalafon: Corrije el escalafon.
+6. personal_docentes: agrega info de dedicacion docente.
+7. personal_categorizados (pouchUpdateCategorizados): agrega info de categorizacion.
+8. personal_conicetnominaweb
 
 1 + 2 + 3 = listado total de personas.
 
@@ -118,8 +130,12 @@ gibPrototype = {
     // },
     personal_becariosunsam: {
       status: true,
+      escalafon: '',
+      unidad: '',
+      tipo: '',
       convocatoria: '',
-      unidad: ''
+      fechaAlta: '',
+      fechaBaja: ''
     },
     personal_docentes: {
       status: true,
@@ -146,6 +162,11 @@ gibPrototype = {
     personal_correccionuuaa: {
       status: true,
       unidad: ''
+    },
+    personal_correccionescalafon: {
+      status: true,
+      escalafon: '',
+      comentario: ''
     }
   },
   cuil: '',
