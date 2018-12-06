@@ -83,19 +83,20 @@ La Memoria de I+d+i+t (investigación, desarrollo, innovación y transferencia) 
 - UNSAM-CONICET: Carrera de investigador CONICET con lugar de trabajo en UNSAM, tienen dedicación exclusiva o semiexclusiva.
 - ASOCIADO: Hace alguna ACyT pero no recibe un estipendio en caracter por parte de la UNSAM que justifique dicha actividad. Tiene título de doctorado, participa de proyectos I+D acreditados en la UNSAM, forma RRHH y tiene producción científica comprobable. Puede tener categoría I, II o III del programa de incentivos. Puede realizar investigación en CNEA, INTI o INTA.
 
-| #   | CONDICIONES PRIMARIAS         | Comentario                                                                                          |
-| --- | ----------------------------- | --------------------------------------------------------------------------------------------------- |
-| 1   | Cargo docente en UNSAM        | Dedicación exclusiva, semiexclusiva o dos dedicaciones simples dentro de la misma unidad académica. |
-| 2   | Cargo de investigador CONICET | Con lugar de trabajo en UNSAM.                                                                      |
+| #   | CONDICIONES PRIMARIAS (DE CONTRATACIÓN) | Comentario                                                                                              |
+| --- | --------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| 1   | Cargo docente en UNSAM                  | Dedicación exclusiva, semiexclusiva o dos dedicaciones simples dentro de la misma unidad académica.     |
+| 2   | Cargo de investigador CONICET           | Con lugar de trabajo en UNSAM.                                                                          |
+| x   | Contrato como investigador              | **PROPUESTA** Personal que se les paga un contrato para investigar, por ejemplo los que están jubilados |
 
-| #   | CONDICIONES SECUNDARIAS                          | Comentario                                              |
+| #   | CONDICIONES SECUNDARIAS (DE MÉRITO)              | Comentario                                              |
 | --- | ------------------------------------------------ | ------------------------------------------------------- |
 | 1   | Categoría en el programa de incentivos           | I, II o III                                             |
 | 2   | Director o codirector de estudiante de posgrado  | Doctorado o posdoctorado en UNSAM                       |
 | 3   | Director o codirector de Proyecto I+D acreditado | PICT, PIP, UNSAM(todos), INTERNACIONALES                |
 | 4   | Artículos con referato (SCOPUS U OTRO)           | Por lo menos 2 en quinquenio sin importar la afiliación |
 | 5   | Libros con referato                              | Por lo menos 1 en quinquenio sin importar la afiliación |
-| x   | Capacidades transferibles                        | **PROPUESTA**                                           |
+| x   | Capacidades transferibles                        | **PROPUESTA** Tecnólogos                                |
 
 ::: tip Aclaración
 Una persona es considerada **INVESTIGADOR** sí y solo sí por lo menos cumple con una condición primaria y una condición secundaria.
