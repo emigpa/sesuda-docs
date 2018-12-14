@@ -34,17 +34,18 @@ La Memoria de I+d+i+t (investigación, desarrollo, innovación y transferencia) 
 | Estudiantes de posgrado internacionales | Internacionales    | outbound inbound                          |
 | Títulos de posgrado expedidos           | Biblioteca Central | Tesis                                     |
 
-| Grupos de investigación                       | Fuente   | Comentario                                        |
-| --------------------------------------------- | -------- | ------------------------------------------------- |
-| Líneas de investigación                       | incierta | Ver web, centros, núcleos, programas, grupos, etc |
-| Proyectos I+D                                 |          | PICT, PIP, UNSAM, INTERNACIONALES                 |
-| Subsidios para infraestructura y equipamiento |          | ARSET                                             |
+| Grupos de investigación                       | Fuente                                                   | Comentario                                        |
+| --------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------- |
+| Líneas de investigación                       | incierta                                                 | Ver web, centros, núcleos, programas, grupos, etc |
+| Proyectos de I+D                              | Financiamiento CyT/Proyecto I+D/inv basica, inv aplicada | PICT, PIP, UNSAM, INTERNACIONALES                 |
+| Subsidios para infraestructura y equipamiento |                                                          | ARSET                                             |
+| Subsidios para eventos de CyT                 |                                                          | asistencia / organizacion                         |
 
 ### Innovación
 
-| Desarrollos              | Fuente | Comentario                                      |
-| ------------------------ | ------ | ----------------------------------------------- |
-| Desarrollos tecnológicos |        | START-UP, SPIN-OFF, EMPRETECNO, AGREGANDO VALOR |
+| Desarrollos              | Fuente                                                                | Comentario                                      |
+| ------------------------ | --------------------------------------------------------------------- | ----------------------------------------------- |
+| Desarrollos tecnológicos | Financiamiento CyT/Proyecto I+D/desarrollo experimental o tecnologico | START-UP, SPIN-OFF, EMPRETECNO, AGREGANDO VALOR |
 
 ### Transferencia
 
@@ -74,6 +75,8 @@ La Memoria de I+d+i+t (investigación, desarrollo, innovación y transferencia) 
 | Instalaciones   |        |            |
 | Equipamiento    |        |            |
 
+### Indicadores
+
 ## Investigadores
 
 ![Diagrama Investigadores UNSAM](./diagramaInvestigadoresUNSAM.png)
@@ -89,16 +92,28 @@ La Memoria de I+d+i+t (investigación, desarrollo, innovación y transferencia) 
 | 2   | Cargo de investigador CONICET           | Con lugar de trabajo en UNSAM.                                                                          |
 | x   | Contrato como investigador              | **PROPUESTA** Personal que se les paga un contrato para investigar, por ejemplo los que están jubilados |
 
-| #   | CONDICIONES SECUNDARIAS (DE MÉRITO)              | Comentario                                              |
-| --- | ------------------------------------------------ | ------------------------------------------------------- |
-| 1   | Categoría en el programa de incentivos           | I, II o III                                             |
-| 2   | Director o codirector de estudiante de posgrado  | Doctorado o posdoctorado en UNSAM                       |
-| 3   | Director o codirector de Proyecto I+D acreditado | PICT, PIP, UNSAM(todos), INTERNACIONALES                |
-| 4   | Artículos con referato (SCOPUS U OTRO)           | Por lo menos 2 en quinquenio sin importar la afiliación |
-| 5   | Libros con referato                              | Por lo menos 1 en quinquenio sin importar la afiliación |
-| x   | Capacidades transferibles                        | **PROPUESTA** Tecnólogos                                |
+| #   | CONDICIONES SECUNDARIAS (DE MÉRITO)             | Comentario                                              |
+| --- | ----------------------------------------------- | ------------------------------------------------------- |
+| 1   | Categoría en el programa de incentivos          | I, II o III                                             |
+| 2   | Director o codirector de estudiante de posgrado | Doctorado o posdoctorado en UNSAM                       |
+| 3   | Miembro de Proyecto I+D acreditado              | PICT, PIP, UNSAM(todos), INTERNACIONALES                |
+| 4   | Artículos con referato (SCOPUS U OTRO)          | Por lo menos 2 en quinquenio sin importar la afiliación |
+| 5   | Libros con referato                             | Por lo menos 1 en quinquenio sin importar la afiliación |
+
+--
+| 6 | Certificacion de Unidad Academica | **PROPUESTA** / Asociados IDAES por consejo de instituto |
+| x | Capacidades transferibles | **PROPUESTA** Tecnólogos |
 
 ::: tip Aclaración
 Una persona es considerada **INVESTIGADOR** sí y solo sí por lo menos cumple con una condición primaria y una condición secundaria.
 Es considerada **INVESTIGADOR ASOCIADO** si sólo cumple con una condición secundaria.
 :::
+
+## AREAS
+
+![Diagrama Areas](./diagramaAreas.png)
+
+1. CIENCIAS NATURALES Y EXACTAS
+   1.1 Matemáticas
+   1.1.1 Matemática Pura
+   1.1.2 Matemática Aplicada
